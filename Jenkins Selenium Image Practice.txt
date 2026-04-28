@@ -94,10 +94,8 @@ Integrating Jenkins with Github using Webhook Approach
 
 Running Selenium Test cases inside Jenkins
 -----------------------------------------------------
-1. Go to the already forked selenium-webdriver repository and create a python file with the name firsttest.py.
-2. Copy/Paste the testcase firsttest.py content created above in the file created in the selenium-webdriver repository.
-3. Next create a Dockerfile in the repository and paste the Dockerfile content created above in the file.
-3. Next create a file named 'Jenkinsfile7' and paste the following pipeline script in the Jenkinsfile7.
+1. Next create a Dockerfile in the repository and paste the Dockerfile content created above in the file.
+2. Next create a file named 'Jenkinsfile7' and paste the following pipeline script in the Jenkinsfile7.
 
 pipeline {
     agent any
