@@ -56,7 +56,7 @@ RUN apt update && apt install -y \
     unzip \
     && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
     && apt-get install ./google-chrome-stable_current_amd64.deb -y \
-    && wget https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.162/linux64/chromedriver-linux64.zip \
+    && wget https://storage.googleapis.com/chrome-for-testing-public/<GOOGLE_CHROME_VERSION>/linux64/chromedriver-linux64.zip \
     && unzip chromedriver-linux64.zip \
     && mv chromedriver-linux64/chromedriver /usr/bin/chromedriver \
     && chown root:root /usr/bin/chromedriver \
