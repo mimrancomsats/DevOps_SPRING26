@@ -10,11 +10,11 @@ If the problem still persists then run the command given in Step 5.
 5. sudo apt-get install -f
 6. google-chrome –version
 7. After running the above command, you may get the following output. Copy Chrome version with yourself for later use.
-   Google Chrome 142.0.7444.162
+   Google Chrome 147.0.7727.137
 
 Install Google Chrome Driver for handling Programmatic requests from Selenium WebDriver
 -----------------------------------------------------
-1. wget https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.162/linux64/chromedriver-linux64.zip
+1. wget https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.137/linux64/chromedriver-linux64.zip
 2. sudo apt install unzip
 3. unzip chromedriver-linux64.zip
 4. sudo mv chromedriver-linux64 /usr/bin/chromedriver
