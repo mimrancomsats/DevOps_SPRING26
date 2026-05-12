@@ -37,7 +37,7 @@ Deploying Nginx server on the Kubernetes using commands
 12. Open the URL to view the deployed application.
 13. If you are using AWS EC2 machine then use following port forwarding command to view the nginx server landing page.
 14. kubectl port-forward service/nginx 8082:80 --address=0.0.0.0 
-15. Default landing page of Wordpress application will be available on the URL.
+15. Default landing page of nginx will be available on the URL (public <EC2 IP>:8082).
 
 
 Deploying Nginx server on the Kubernetes cluster using deployment and service YAML files
@@ -90,7 +90,7 @@ spec:
 15. Default landing page of nginx server will be available on the URL.
 16. If you are using AWS EC2 machine then use following port forwarding command to view the nginx server landing page.
 17. kubectl port-forward service/nginx-svc 8080:80 --address=0.0.0.0 
-18. Default landing page of nginx server will be available on the URL.
+18. Default landing page of nginx server will be available on the URL (public <EC2 IP>:8080).
 
 
 Getting List of Pods.
@@ -205,7 +205,7 @@ spec:
 10. Copy the returned URL in the browser. You will find wordpress setup in the Kubernetes cluster.
 11. If you are using AWS EC2 machine then use foolowing port forwarding command to view the Wordpress landing page.
 12. kubectl port-forward service/wordpress 8081:80 --address=0.0.0.0 
-13. Default landing page of Wordpress application will be available on the URL.
+13. Default landing page of Wordpress application will be available on the URL (public <EC2 IP>:8081).
 
 
 Deploying django-todo-cicd application in Kubernetes
@@ -260,4 +260,4 @@ spec:
 9. Copy the returned URL to the Browser and access the deployed application.
 10. If you are using AWS EC2 machine then use foolowing port forwarding command to view the application landing page.
 11. kubectl port-forward service/todo-service 8083:8000 --address=0.0.0.0 
-12. Default landing page of Wordpress application will be available on the URL.
+12. Default landing page of todo application will be available on the URL (public <EC2 IP>:8083).
