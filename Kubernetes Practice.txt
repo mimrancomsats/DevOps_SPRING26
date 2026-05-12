@@ -35,6 +35,8 @@ Deploying Nginx server on the Kubernetes using commands
 10. Run following command to get URL for the deployed nginx server.
 11. minikube service nginx --url
 12. Open the URL to view the deployed application.
+13. kubectl port-forward service/nginx 8082:80 --address=0.0.0.0 
+14. Default landing page of Wordpress application will be available on the URL.
 
 
 Deploying Nginx server on the Kubernetes cluster using deployment and service YAML files
@@ -254,3 +256,5 @@ spec:
 7. Run the command the following to get URL for the application.
 8. minikube service todo-service --url
 9. Copy the returned URL to the Browser and access the deployed application.
+10. kubectl port-forward service/todo-service 8083:8000 --address=0.0.0.0 
+11. Default landing page of Wordpress application will be available on the URL.
